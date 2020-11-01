@@ -43,3 +43,6 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+## Stay in touch
+- Email: thangplum@gmail.com
+- Phone number: (309) 569-2566
