@@ -33,12 +33,11 @@ function App() {
     const { phoneNumber, accessCode } = formValue;
   
     if (phoneNumber !== "" && accessCode === "") {
-      console.log("POST Request runs")
       verifyPhoneNumber();
     } else if (phoneNumber !== "" && accessCode !== "") {
       getResult();
     } else {
-      console.log("Can't verified")
+      setStatus("Can't verified")
     }
   }
 

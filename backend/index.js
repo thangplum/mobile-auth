@@ -56,7 +56,6 @@ app.post('/getcode', (req, res) => {
             // Check if the phone number is in database or not
             if (!snapshot.child(req.body.phoneNumber).exists()) {
                 const accessCode = generateRandomString(6);
-                console.log(accessCode, req.body.phoneNumber)
                 // Write to database with given phone number and generated access code
                 writeAccessCode(req.body.phoneNumber, accessCode);
                 //text the access code to the user
@@ -93,7 +92,6 @@ app.post('/verify', (req, res) => {
         if (snapshot && snapshot.exists()) {
             // Verify user's input access code with database's access code. 
             if (snapshot.val().accessCode == req.body.accessCode) {
-                console.log("success");
                 // Set phone number's access code to "" when they are successful verified
                 writeAccessCode(req.body.phoneNumber, "")
                 // return a success when verified
