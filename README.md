@@ -4,7 +4,7 @@
 This is the frontend and backend of Skipli's coding challenge
 
 ## Frontend
-In the project directory, you can run:
+In the ```frontend``` directory, you can run:
 ### Installation
 
 ```bash
@@ -24,7 +24,7 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 ## Backend
-In the project directory, you can run:
+In the ```backend``` directory, you can run:
 ### Installation
 
 ```bash
