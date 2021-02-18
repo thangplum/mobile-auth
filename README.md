@@ -1,7 +1,7 @@
-# skipli-assignment
+# Mobile phone authetication
 
 ## Description
-This is the frontend and backend of Skipli's coding challenge
+This is the frontend and backend of my mobile phone authetication feature using React, TypeScript, Express, Node.js, Firebase, and Twilio
 
 ## Frontend
 In the ```frontend``` directory, you can run:
